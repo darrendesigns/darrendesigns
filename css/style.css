@@ -9,8 +9,8 @@ h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 h1 {
-  font-size: 50px;
-  margin-bottom: 2px;
+  font-size: 2rem;
+  margin-bottom: 0;
 }
 /* make images flexible */
 img {
@@ -24,8 +24,15 @@ a:hover {
 }
 header {
   border-bottom: 10px solid #d98555;
+  display: flex;
+  justify-content: center;
 }
 /* navbar styling */
+
+nav {
+  flex-flow: column wrap;
+  padding: 0rem 2rem;
+}
 nav ul {
   padding: 0;
   margin: 0;
@@ -52,14 +59,19 @@ nav a {
   text-decoration: none;
   display: block;
 }
+nav .logo {
+  flex-basis: 100%;
+  text-align: center;
+}
 nav a:hover {
   color: #d98555;
 }
 /* establishes a white background */
 .main-bkgd {
-  background: #ffffff url("/media/gulp-bottom-beans.jpg") repeat-x bottom;
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
   padding-bottom: 300px;
 }
+
 /* sits inside of the white background, centered */
 .main {
   max-width: 1200px;
@@ -68,6 +80,12 @@ nav a:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
+}
+.main-products{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 article {
   flex-basis: 73%;
@@ -77,6 +95,7 @@ figure {
   flex-basis: 25%;
   background-color: #59331d;
   border-radius: 10px;
+  text-align: center;
 }
 figure img {
   border-top-left-radius: 10px;
@@ -151,5 +170,67 @@ footer a {
     padding: 2rem;
   }
 }
-
+/* Products Page */
+.products-content {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+}
+/* medium screen | tablet & landscape mobile */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+      font-size: 1.2rem;
+  }
+  nav ul {
+      flex-flow: column wrap;
+      display: flex;
+      justify-content: center;
+  }
+  .main {
+      flex-flow: column wrap;
+  }
+  .main article {
+      flex-basis: 60%;
+  }
+  picture {
+      flex-basis: 35%;
+  }
+  .products-content {
+      grid-column-gap: 3rem;
+      grid-template-columns: 35% 60%;
+  }
+  .article-contact {
+      flex-basis: 45% !important;
+  }
+  .picture-contact {
+      flex-basis: 50% !important;
+  }
+}
+/* large screen | laptop & landscape tablet & larger */
+@media screen and (min-width: 992px) {
+  body {
+      font-size: 1.2rem;
+  }
+  nav ul {
+      flex-flow: row wrap;
+  }
+  .main {
+      flex-flow: row wrap;
+  }
+  .main article {
+      flex-basis: 45%;
+  }
+  picture {
+      flex-basis: 50%;
+  }
+  nav {
+      flex-flow: row wrap;
+      justify-content: space-between;
+  }
+  .products-content {
+      grid-gap: 1rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  }
+}
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
