@@ -125,7 +125,7 @@ footer a {
 
 @media(min-width: 768px){
   .main{ 
-    flex direction: row;
+    flex-direction: row;
   }
   nav ul{
     flex-direction: row;
