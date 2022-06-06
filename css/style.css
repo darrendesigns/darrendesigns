@@ -35,7 +35,6 @@ header {
   justify-content: center;
 }
 /* navbar styling */
-
 nav {
   flex-flow: column wrap;
   padding: 0rem 2rem;
@@ -47,6 +46,7 @@ nav ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
 }
 nav li {
   margin: 0 1rem 1rem 1rem;
@@ -75,10 +75,9 @@ nav a:hover {
 }
 /* establishes a white background */
 .main-bkgd {
-  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg)repeat-x bottom;
   padding-bottom: 300px;
 }
-
 /* sits inside of the white background, centered */
 .main {
   max-width: 1200px;
@@ -147,35 +146,6 @@ footer a {
   font-size: 2rem;
   display: block;
   margin: 0 1rem 3rem 1rem;
-}
-
-@media(min-width: 768px){
-  .main{ 
-    flex-direction: row;
-  }
-  nav ul{
-    flex-direction: row;
-  }
-  body{
-    background-color:#082B59
-  }
-  .productgrid{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 2rem;
-  }
-}
-
-@media(min-width: 992px){
-  nav {
-    display:flex;
-    justify-content: space-between;
-  }
-  .productgrid{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 2rem;
-  }
 }
 /* Products Page */
 .products-content {
