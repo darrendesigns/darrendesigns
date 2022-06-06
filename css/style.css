@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
 }
-
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -31,7 +30,7 @@ a:hover {
 }
 header {
   border-bottom: 10px solid #d98555;
-  display: flex;
+  display: flexbox;
   justify-content: center;
 }
 /* navbar styling */
@@ -100,7 +99,7 @@ figure {
   margin: 3rem 0 0 0;
   flex-basis: 25%;
   background-color: #59331d;
-  border-radius: 10px;
+  border-radius: 5px;
   text-align: center;
 }
 figure img {
@@ -114,7 +113,7 @@ figcaption {
 .button {
   display: inline-block;
   background-color: #59331D;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 0;
   color: #f2f2f2;
@@ -124,6 +123,9 @@ figcaption {
 .button:hover {
   background-color: #f2f2f2;
   color: #59331d;
+}
+.fa:hover{
+  opacity:0.7;
 }
 footer {
   color: #f2f2f2;
@@ -137,9 +139,6 @@ footer ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-}
-.fa:hover{
-  opacity:0.7;
 }
 footer a {
   color: #f2f2f2;
