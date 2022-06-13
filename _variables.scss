@@ -1,0 +1,32 @@
+//sass variables
+$color-white:#f2f2f2;
+$color-brown: #59331d;
+$color-orange:#d98555;
+$color-blue:#082B59;
+$text-align: center;
+$margin: 0;
+$padding: 0;
+$flex-direction: row;
+
+//variable-font
+$mainfont: 'Lato';
+$mainfstyle: normal;
+$mainfsize: 2rem;
+$headfont: Poppins;
+$line-height: 40px;
+
+//css spacing variables
+:root{
+  --disFlex: flex;
+  --disBlo: block;
+  --flowflex: row;
+  --centjust: center;
+  --spacejust: space-between;
+  --endjust: flex-end;
+}
+//spacing
+$wildPerc:100%; 
+$mainDim: 200px;
+$mainSpace: 4px;
+$tenDim: 10px;
+$zeroSpace:0;

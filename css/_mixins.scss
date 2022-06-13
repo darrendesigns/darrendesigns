@@ -1,0 +1,18 @@
+//mixins
+@mixin spacing ($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+  }
+  
+  @mixin topheader {
+    background-color: $color-blue;
+    border: $tenDim solid $color-orange;
+  }
+  
+  @mixin LatoFont($FontFam,$FontWeight,$FontSize){
+    font-family: $Fontfam;
+    font-style: $FontStyle;
+    font-weight: $FontWeight;
+    font-size: $FontSize;
+    line-height: $line-high;
+  }
