@@ -1,6 +1,6 @@
 //body css
-@include spacing($zero, $zero);
-body {
+@include spacing($zero,$zero);
+body{
     background-color: $color-blue;
     margin: $margin;
     padding: $padding;
